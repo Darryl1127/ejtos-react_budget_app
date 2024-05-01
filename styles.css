@@ -1,0 +1,29 @@
+.select-container {
+    position: relative;
+    width: 150px;
+  }
+  
+  .select-container select {
+    appearance: none;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid green;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .select-container::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style the dropdown arrow */
+  .select-container::after {
+    font-size: 12px;
+    color: #696;
+}
